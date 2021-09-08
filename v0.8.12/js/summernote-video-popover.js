@@ -51,7 +51,7 @@
                     }
                     $editable.find(tagName).each(function () {
                         var bound = $(this).offset();
-                        if (e.clientX < bound.left || e.clientY < bound.top || e.clientX > bound.left + $(this).width() || e.clientY > bound.top + $(this).height()) {
+                        if (e.pageX < bound.left || e.pageY < bound.top || e.pageX > bound.left + $(this).width() || e.pageY > bound.top + $(this).height()) {
                             return true;
                         }
                         ret.push(this);
